@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-inicios",
+  "version": "1.0.0",
+  "description": "Es el directorio de pruebas para aprender git y node",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andres-Dead/Bootstrap-Inicios.git"
+  },
+  "author": "Andres Marquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andres-Dead/Bootstrap-Inicios/issues"
+  },
+  "homepage": "https://github.com/Andres-Dead/Bootstrap-Inicios#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
