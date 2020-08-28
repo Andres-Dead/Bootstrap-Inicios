@@ -11,11 +11,14 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<!--Incluimos la nueva hoja de estilos que creamos en la carpeta css-->
+<link rel="stylesheet" href="css/styles.css">
 <body>
 <!--La clase "jumbotron" nos permite apartar el contenido dentro del jumbotron del resto de la pagina-->
     <header class="jumbotron">
         <div class="container">
-            <div class="row"> 
+            <!--Incluimos las clases del nuevo archivo css, en este caso usaremos row-header-->
+            <div class="row row-header"> 
                 <!--La clase "col-12" nos permite crear en contenido en forma de columnas (12 columnas) para pantallas de tamaño pequeño y la clase "col-sm-6" para pantallas pequeñas y extragrandes-->
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
@@ -30,7 +33,9 @@
 <!--Clase contenedora (Deja espacios entre los bordes de la pagina-->
     <div class="container">
         <!--La clase "row" nos permite separar nuestro contenido en filas-->
-        <div class="row">
+        <!--Agregamos la clase "row-content" de la hoja de estilos sytiles.css-->
+        <!--Vamos a centrar verticalmente el contenido con la clase "align-items-center"-->
+        <div class="row row-content align-items-center">
             <!--De nuevo declaramos que para pantallas extrapequeñas usaremos 12 columnas, para pequeñas 4 y para medianas 3 en esta fila -->
             <!--Agregamos las clases order-sm-last y order-sm-first lo cual hara que la que tenga el atributo "first" sera movido la lado izquiero de la pantalla y el que tenga el atributo "last" al lado derecho de la pantalla-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -44,7 +49,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4  col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -54,7 +59,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -66,13 +71,15 @@
         </div>
     </div>
 
-    <footer>
+    <!--Agregamos la clase "footer" de la hoja de estilos styles.css-->
+    <footer class="footer">
         <div class="container">
             <div class="row">   
                 <!--Aplicamos la clase "offset-1" los que nos indica que este contenido sera movido una columna a la derecha-->          
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <!--Usamos la clase "list-unstyled" para quitar los puntos negros que salen a la izquierda de la lista-->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -90,8 +97,10 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div >
-                <div class="col-12 col-sm-4">
-                    <div>
+                <!--Usamos la clase "align-self-center" para centrar nuestro contenido al centro verticalmente en la fila y columna-->
+                <div class="col-12 col-sm-4 align-self-center">
+                    <!--Alinearemos el texto del div usando la clase "text-center"-->
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -101,7 +110,8 @@
                     </div>
                 </div>
            </div>
-           <div class="row">             
+           <!--Alinear los contenidos horizontalmente con la clase "justify-content-center"-->
+           <div class="row justify-content-center">             
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>

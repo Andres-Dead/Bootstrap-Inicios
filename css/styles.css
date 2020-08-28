@@ -1,0 +1,42 @@
+/* Aplicamos los estilos personalizados usando las clases*/
+/*Contenido de las filas del header*/
+.row-header{
+    /* cambiamos el margen a 0 pixeles*/
+    margin: 0px auto;
+    /* Quitamos el relleno aplicando 0 pixeles*/
+    padding: 0px auto;
+}
+
+/*Contenido de las filas*/
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px 50px 8px;
+    /*Agregamos un borde debajo de nuestro contenido de 1 pixel*/
+    border-bottom: 1px ridge;
+    /*Agregamos una altura minima de nuestro contenido de 400 pixeles de alto */
+    min-height: 400px;
+}
+
+/*Contenido del footer (pie de pagina)*/
+
+.footer{
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*Cambiar el estilo de la clase jumbotron*/
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: #9575CD;
+    color: floralwhite;
+}
+
+/*Clase address*/
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+
+}
