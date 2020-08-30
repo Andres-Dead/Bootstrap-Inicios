@@ -10,11 +10,10 @@
 /*Contenido de las filas*/
 .row-content{
     margin: 0px auto;
-    padding: 50px 0px 50px 8px;
+    padding: 20px 0px 25px 8px;
     /*Agregamos un borde debajo de nuestro contenido de 1 pixel*/
-    border-bottom: 1px ridge;
     /*Agregamos una altura minima de nuestro contenido de 400 pixeles de alto */
-    min-height: 400px;
+    min-height: 100px;
 }
 
 /*Contenido del footer (pie de pagina)*/
@@ -33,10 +32,21 @@
     color: floralwhite;
 }
 
+
 /*Clase address*/
 .address{
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
 
+}
+
+
+.body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: #512da8;
 }

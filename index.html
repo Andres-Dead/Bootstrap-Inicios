@@ -14,6 +14,36 @@
 <!--Incluimos la nueva hoja de estilos que creamos en la carpeta css-->
 <link rel="stylesheet" href="css/styles.css">
 <body>
+    <!--Barra de navegación con la etiqueta <nav> y adjuntamos la clase "navbar" y la clase "nav-dark" para obcurecer la barra de navegación-->
+    <!--Agregamos la clase "navbar-expand-sm" que nos ayuda a colapsar el contenido en pantallas pequeñas-->
+    <!--La clase "bg-primary" nos pone el color por defecto de bootstrap que es un azul -->
+    <!--La clase "fixed-top" nos permite poner la barra de navegación el parte de arriba de la ventana aún cuando hagamos scrol en la pagina-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!--Agregamos el contenido a la barra de navegación-->
+        <div class="container">
+            <!--Crearemos un boton para la vista de moviles, la cual nos permitira mostrar y apagar el contenido de nuestra barra de navegación-->
+            <!--Asignamos las clases "navbar-toggler", "collapse" y "data-taget="#Navbar" para crear la clase para mostrar y ocultar el contenido, tambien para
+            solo aparecer este boton cuando sean vistas moviles en el respectivo orden-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <!--Utilizamos la clase "navbar-toggler-icon" para agregar el icono al boton-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--la clase "navbar-brand" nos permite poner el nombre de la compañia en la barra de navegación-->
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+                <!--Creamos un div para incluir los articulos del menu para mostrarlos o ocultarlos-->
+                <div class="collapse navbar-collapse" id="Navbar">
+            <!--La clasee mr-auto nos permite arreglar el margen derecho-->    
+            <ul class="navbar-nav mr-auto">
+                <!--La clase "nav-item" identifica la etiqueta <liv> como articulo de la navegación, la clase "nav-link" hace que se destaque cuando pasamos el mouse por encima  y la clase "active" nos permite mostrar que pagina esta activa-->
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+                </div>
+            </div>
+
+    </nav>
 <!--La clase "jumbotron" nos permite apartar el contenido dentro del jumbotron del resto de la pagina-->
     <header class="jumbotron">
         <div class="container">
@@ -81,7 +111,7 @@
                     <!--Usamos la clase "list-unstyled" para quitar los puntos negros que salen a la izquierda de la lista-->
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
