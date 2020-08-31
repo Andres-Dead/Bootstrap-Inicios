@@ -34,7 +34,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--la clase "navbar-brand" nos permite poner el nombre de la compañia en la barra de navegación-->
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41" alt="Error"></a>
                 <!--Creamos un div para incluir los articulos del menu para mostrarlos o ocultarlos-->
                 <div class="collapse navbar-collapse" id="Navbar">
             <!--La clasee mr-auto nos permite arreglar el margen derecho-->    
@@ -61,7 +61,8 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <!--La clase "col-12" seguimos especificando que para pantallas extrapequeñas sin importar el contenido del <div> se apilaran debajo del contenido anterior, la clase "col-sm" se declara para pantallas pequeñas y extragrandes y se ocupara el espacio restante de las columnas de la clase anterior (esto quiere decir que si en nuestra clase anterior usamos 6 (col-sm-6) para esta clase se usaran las 6 columnas restantes para completar las 12 columnas-->
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" alt="Error" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -79,8 +80,14 @@
             </div>
             <!--De nuevo completamos los espacios restantes-->
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
+                <!--Agregando Media-->
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Error...">
+                    <div class="media-body">
+                <h2 class="mt-0">Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+            </div>
             </div>
         </div>
 
@@ -100,10 +107,16 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-            </div>
+                <div class="media">
+                    <img class="d-flex mr-3 mg-thumbnail align-self-center" src="img/alberto.png" alt="Error...">
+                    <div class="media-body">
+                    <h2>Alberto Somayya</h2>
+                    <h4>Executive Chef</h4>
+                    <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+              
+                    </div>
+                </div>
+                     </div>
         </div>
     </div>
 

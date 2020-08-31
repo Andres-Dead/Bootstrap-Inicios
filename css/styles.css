@@ -13,7 +13,7 @@
     padding: 20px 0px 25px 8px;
     /*Agregamos un borde debajo de nuestro contenido de 1 pixel*/
     /*Agregamos una altura minima de nuestro contenido de 400 pixeles de alto */
-    min-height: 100px;
+    min-height: 400px;
 }
 
 /*Contenido del footer (pie de pagina)*/
