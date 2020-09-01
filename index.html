@@ -61,11 +61,15 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <!--La clase "col-12" seguimos especificando que para pantallas extrapequeñas sin importar el contenido del <div> se apilaran debajo del contenido anterior, la clase "col-sm" se declara para pantallas pequeñas y extragrandes y se ocupara el espacio restante de las columnas de la clase anterior (esto quiere decir que si en nuestra clase anterior usamos 6 (col-sm-6) para esta clase se usaran las 6 columnas restantes para completar las 12 columnas-->
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" alt="Error" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center butye">
+                    <a href="#reserve"><button class="btn bt-sm btn-warning btn-block">Reserve Table</button></a>
                 </div>
             </div>
         </div>
+        
     </header>
 <!--Clase contenedora (Deja espacios entre los bordes de la pagina-->
     <div class="container">
@@ -86,7 +90,7 @@
                     <div class="media-body">
                         <!--agregando badges (alertas)-->
                 <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span> </h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <p class="d-none d-lg-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
             </div>
             </div>
@@ -98,9 +102,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm  col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                <p class="d-none d-lg-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Error...">
+                <div class="media-body">
+                    </div>
         </div>
 
         <div class="row row-content align-items-center">
@@ -113,13 +121,51 @@
                     <div class="media-body">
                     <h2>Alberto Somayya</h2>
                     <h4>Executive Chef</h4>
-                    <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    <p class="d-none d-lg-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
               
                     </div>
                 </div>
                      </div>
         </div>
+        <div class="row row-content col-12 col-sm-8 align-self-center" id="reserve" name="reserve">
+            <a id="reserve" name="reserve"></a>
+            <div>
+                <div class="col-sm">
+                    <div class="card ">
+                        <h3 class="card-header yellow text-white"><b>Reserve a table</b></h3>
+                        <div class="card-body">
+                            <form action="">
+                            <dl class="row">
+                                <dt class="col-12 col-sm-3 form-group">Number of guest</dt>
+                                <dd class="col-12 col-sm-9 form-group"> 
+                                    <input type="radio" id="1" name="guest" value="1"> <label for="1"> 1</label> 
+                                    <input type="radio" id="2" name="guest" value="2"> <label for="2">2</label>
+                                    <input type="radio" id="3" name="guest" value="3"> <label for="3">3</label>
+                                    <input type="radio" id="4" name="guest" value="4"> <label for="4">4</label>
+                                    <input type="radio" id="5" name="guest" value="5"> <label for="5">5</label>
+                                    <input type="radio" id="6" name="guest" value="6"> <label for="6">6</label>                                </dd>
+                                <dt class="col-12 col-sm-3 form-group">Date and time</dt>
+                                <dd class="col-12 col-sm-3 form-group"><input type="text" class="form-control" id="date" name="date" placeholder="Date"></dd>
+                                <dd class="col-12 col-sm-3 form-group"><input type="text" class="form-control" id="time" name="time" placeholder="Time"></dd>
+                                <dd class="col-12 col-sm-3"></dd>
+                                <dd class="col-12 col-sm-3 offset-md-2">
+                                <div class=" form-group row">
+                                    <div class="">
+                                        <button type="submit" class="btn btn-primary" >
+                                            <b>Reserve</b>
+                                        </button>
+                                </div>
+                                </dd>
+                            </dl>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+        
 
     <!--Agregamos la clase "footer" de la hoja de estilos styles.css-->
     <footer class="footer">
