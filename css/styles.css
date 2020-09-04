@@ -80,4 +80,12 @@
 
 .butye{
     color: rgb(255, 186, 59);
+    color: black;
+}
+
+/*Estilos del carousel*/
+#carouselButton{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
 }
