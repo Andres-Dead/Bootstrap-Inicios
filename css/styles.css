@@ -1,91 +1,57 @@
-/* Aplicamos los estilos personalizados usando las clases*/
-/*Contenido de las filas del header*/
-.row-header{
-    /* cambiamos el margen a 0 pixeles*/
-    margin: 0px auto;
-    /* Quitamos el relleno aplicando 0 pixeles*/
-    padding: 0px auto;
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
 }
-
-/*Contenido de las filas*/
-.row-content{
-    margin: 0px auto;
-    padding: 20px 0px 25px 8px;
-    /*Agregamos un borde debajo de nuestro contenido de 1 pixel*/
-    /*Agregamos una altura minima de nuestro contenido de 400 pixeles de alto */
-    min-height: 400px;
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
-
-/*Contenido del footer (pie de pagina)*/
-
-.footer{
-    background-color: #D1C4E9;
-    margin: 0px auto;
-    padding: 20px 0px 20px 0px;
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px;
 }
-
-/*Cambiar el estilo de la clase jumbotron*/
-.jumbotron{
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background: #9575CD;
-    color: floralwhite;
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite;
 }
-
-
-/*Clase address*/
-.address{
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
-
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
 }
-
-
-.body{
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
 }
-
-.navbar-dark{
-    background-color: #512da8;
+.navbar-dark {
+  background-color: #512DA8;
 }
-
-/*Estilos de las Tabs*/
-.tab-content{
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px ;
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
-
-/*Estilo del carrusel*/
-.carousel{
-    background: #512da8;
+.carousel {
+  background: #512DA8;
 }
-.carousel-item{
-    height: 300px;
+.carousel .carousel-item {
+  height: 300px;
 }
-.carousel-item img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 300px;
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
 }
-
-
-.yellow{
-    background-color: rgb(255, 186, 59);
-}
-
-.butye{
-    color: rgb(255, 186, 59);
-    color: black;
-}
-
-/*Estilos del carousel*/
-#carouselButton{
-    right: 0px;
-    position: absolute;
-    bottom: 0px;
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
